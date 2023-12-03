@@ -157,7 +157,7 @@ button.bg-primary:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: $primary_t2 !important;
+  color: $lighter_t1 !important;
 }
 
 
@@ -320,3 +320,165 @@ button.bg-lighter:focus {
 a.text-lighter:hover, a.text-lighter:focus {
   color: $lighter_t2 !important;
 }
+
+
+
+/*------------------------------------
+- COLOR darker
+------------------------------------*/
+
+$darker_t1: #274c77;
+$darker_t2: #1a3350;
+$darker_t3: #6c9acf;
+$darker_t4: #80a7d5;
+$darker_t5: #08111a;
+$darker_t6: #162c45;
+$darker_t7: #1e3a5c;
+$darker_t8: #000000;
+$darker_t9: #8fb2da;
+
+$darker_shadow: rgba(39, 76, 119, 0.5);
+$darker_text_color_dark_bright: #fff;
+
+
+.alert-darker {
+  color: $darker_t5;
+  background-color: $darker_t9;
+  border-color: $darker_t4;
+}
+
+.alert-darker hr {
+  border-top-color: $darker_t3;
+}
+
+.alert-darker .alert-link {
+  color: $darker_t8;
+}
+
+.badge-darker {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t1;
+}
+
+.badge-darker[href]:hover, .badge-darker[href]:focus {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t2;
+}
+
+.bg-darker {
+  background-color: $darker_t1 !important;
+}
+
+a.bg-darker:hover, a.bg-darker:focus,
+button.bg-darker:hover,
+button.bg-darker:focus {
+  background-color: $darker_t2 !important;
+}
+
+.border-darker {
+  border-color: $darker_t1 !important;
+}
+
+.btn-darker {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t1;
+  border-color: $darker_t1;
+}
+
+.btn-darker:hover {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t7;
+  border-color: $darker_t2;
+}
+
+.btn-darker:focus, .btn-darker.focus {
+  box-shadow: 0 0 0 0.2rem $darker_shadow;
+}
+
+.btn-darker.disabled, .btn-darker:disabled {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t1;
+  border-color: $darker_t1;
+}
+
+.btn-darker:not(:disabled):not(.disabled):active, .btn-darker:not(:disabled):not(.disabled).active, .show > .btn-darker.dropdown-toggle {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t2;
+  border-color: $darker_t6;
+}
+
+.btn-darker:not(:disabled):not(.disabled):active:focus, .btn-darker:not(:disabled):not(.disabled).active:focus, .show > .btn-darker.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $darker_shadow;
+}
+
+.btn-outline-darker {
+  color: $darker_t1;
+  background-color: transparent;
+  border-color: $darker_t1;
+}
+
+.btn-outline-darker:hover {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t1;
+  border-color: $darker_t1;
+}
+
+.btn-outline-darker:focus, .btn-outline-darker.focus {
+  box-shadow: 0 0 0 0.2rem $darker_shadow;
+}
+
+.btn-outline-darker.disabled, .btn-outline-darker:disabled {
+  color: $darker_t1;
+  background-color: transparent;
+}
+
+.btn-outline-darker:not(:disabled):not(.disabled):active, .btn-outline-darker:not(:disabled):not(.disabled).active, .show > .btn-outline-darker.dropdown-toggle {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t1;
+  border-color: $darker_t1;
+}
+
+.btn-outline-darker:not(:disabled):not(.disabled):active:focus, .btn-outline-darker:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-darker.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $darker_shadow;
+}
+
+.list-group-item-darker {
+  color: $darker_t5;
+  background-color: $darker_t4;
+}
+
+.list-group-item-darker.list-group-item-action:hover, .list-group-item-darker.list-group-item-action:focus {
+  color: $darker_t5;
+  background-color: $darker_t3;
+}
+
+.list-group-item-darker.list-group-item-action.active {
+  color: $darker_text_color_dark_bright;
+  background-color: $darker_t5;
+  border-color: $darker_t5;
+}
+
+.table-darker,
+.table-darker > th,
+.table-darker > td {
+  background-color: $darker_t4;
+}
+
+.table-hover .table-darker:hover {
+  background-color: $darker_t3;
+}
+
+.table-hover .table-darker:hover > td,
+.table-hover .table-darker:hover > th {
+  background-color: $darker_t3;
+}
+
+.text-darker {
+  color: $darker_t1 !important;
+}
+
+a.text-darker:hover, a.text-darker:focus {
+  color: $darker_t2 !important;
+}
+
+
