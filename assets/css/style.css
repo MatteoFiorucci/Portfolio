@@ -451,11 +451,10 @@ a.text-darker:hover, a.text-darker:focus {
   height: 100%;
   width: 100%;
   background-color: #E7ECEF;
-  margin-top: 70px;
 }
 * body main .image-bg {
   height: 320px;
-  top: 42.1%;
+  top: 41.7%;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
 }
 * .middle {
@@ -490,16 +489,21 @@ a.text-darker:hover, a.text-darker:focus {
   opacity: 0.5;
 }
 @media (max-width: 350px) {
+  * nav {
+    background-color: #274c77;
+  }
   * nav a {
     display: none !important;
   }
   * main {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     height: 829px !important;
   }
   * main .left,
   * main .right {
+    margin-top: 50px;
     width: 100% !important;
   }
   * main .image-bg {
@@ -510,5 +514,13 @@ a.text-darker:hover, a.text-darker:focus {
   * main img {
     margin-top: 80px;
     width: 250px;
+  }
+  * footer {
+    display: flex;
+    flex-direction: column;
+  }
+  * footer .center a {
+    margin: 8px !important;
+    padding: 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */
