@@ -11,7 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -19,10 +23,10 @@
     <script defer src="assets/js/script.js"></script>
   </head>
   <body>
-    <nav class="bg-darker">
+    <nav class="bg-darker z-3">
       <div class="nav-container d-flex w-100 text-center">
         <div class="d-flex w-100">
-          <div class="middle w-100 justify-content-around" >
+          <div class="middle w-100 justify-content-around">
             <a
               href="/"
               class="middle text-decoration-none text-primary active button"
@@ -57,8 +61,65 @@
         </div>
       </div>
     </nav>
+    <main style="height: 884px">
+      <section class="w-50 middle left">
+        <div class="flex-column text-center mt-5">
+          <p class="h3 p-3">Ciao, sono Matteo! 👋</p>
+          <p class="h2 p-2">
+            Sono un appassionato Sviluppatore Front-End con sede in Italia.
+          </p>
+        </div>
+      </section>
+      <section class="w-50 middle position-relative right">
+        <div
+          class="container bg-darker w-75 position-absolute z-0 rounded-5 image-bg"
+        ></div>
+        <img
+          class="mx-auto d-block z-1"
+          width="500"
+          src="assets/img/profile-picture-no-bg.png"
+          alt="Foto Profilo"
+        />
+      </section>
+    </main>
 
-    <h1>home</h1>
+    <footer class="d-flex w-100 bg-darker text-primary justify-content-around p-2 middle">
+      <div>
+        <p>Email: matteofiorucci123@gmail.com</p>
+        <p>Telefono: +39 342 533 7098</p>
+      </div>
+
+      <div class="d-flex">
+        <div>
+          <a class="m-4 text-primary text-decoration-none button_2" href="/">Home</a>
+        </div>
+        <div>
+          <a class="m-4 text-primary text-decoration-none button_2" href="/about_me/">Su di Me</a>
+        </div>
+        <div>
+          <a class="m-4 text-primary text-decoration-none button_2" href="/portfolio/">Portfolio</a>
+        </div>
+        <div>
+          <a class="m-4 text-primary text-decoration-none button_2" href="/contacts/">Contatti</a>
+        </div>
+      </div>
+
+      <div class="d-flex ">
+          <a 
+          class="m-4"
+            href="https://www.instagram.com/matteo.fiorucci/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img width="30" src="/assets/img/instagram.png" alt="Instagram" />
+          </a>
+          <a 
+          class="m-4"
+          href="https://www.linkedin.com/in/matteo-fiorucci/" target="_blank" rel="noopener noreferrer">
+            <img width="30" src="/assets/img/linkedin.png" alt="Linkedin" />
+          </a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

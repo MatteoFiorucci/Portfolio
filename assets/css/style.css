@@ -434,6 +434,30 @@ a.text-darker:hover, a.text-darker:focus {
   margin: 0;
   box-sizing: border-box;
 }
+* body nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+* body nav .active,
+* body nav .special {
+  border: 1px solid #90bfe6;
+  border-radius: 15px;
+}
+* body main {
+  background-image: url("/assets/img/bg2.png");
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #E7ECEF;
+  margin-top: 70px;
+}
+* body main .image-bg {
+  height: 320px;
+  top: 42.1%;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
 * .middle {
   justify-content: center;
   align-items: center;
@@ -452,9 +476,39 @@ a.text-darker:hover, a.text-darker:focus {
 * .button:focus {
   border: 1px solid #90bfe6;
 }
-
-nav .active,
-nav .special {
-  border: 1px solid #90bfe6;
+* .button_2 {
+  border: 1px solid transparent;
+  padding: 10px;
   border-radius: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+* .button_2:hover {
+  border: 1px solid #90bfe6;
+}
+* .button_2:active {
+  opacity: 0.5;
+}
+@media (max-width: 350px) {
+  * nav a {
+    display: none !important;
+  }
+  * main {
+    display: flex;
+    flex-direction: column;
+    height: 829px !important;
+  }
+  * main .left,
+  * main .right {
+    width: 100% !important;
+  }
+  * main .image-bg {
+    width: 280px !important;
+    height: 150px !important;
+    top: 54.6% !important;
+  }
+  * main img {
+    margin-top: 80px;
+    width: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
