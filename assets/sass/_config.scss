@@ -7,12 +7,12 @@ $font-stack: 'Montserrat', Arial, sans-serif;
 ------------------------------------*/
 
 $primary_t1: #A3CEF1;
-$primary_t2: #76b6ea;
+$primary_t2: #90bfe6;
 $primary_t3: #5caaeb;
 $primary_t4: #3699ea;
 $primary_t5: #3895e0;
 $primary_t6: #69afe8;
-$primary_t7: #84bdec;
+$primary_t7: rgba(142, 173, 197, 0.85);
 $primary_t8: #1e7cc8;
 $primary_t9: #065fa7;
 
@@ -152,12 +152,13 @@ button.bg-primary:focus {
   background-color: $primary_t3;
 }
 
-.text-primary {
+.text-primary,  a.text-primary:focus  {
   color: $primary_t1 !important;
 }
 
-a.text-primary:hover, a.text-primary:focus {
-  color: $lighter_t1 !important;
+a.text-primary:hover {
+  color: $primary_t6 !important;
+  border-color: $primary_t6 !important;
 }
 
 

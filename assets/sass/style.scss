@@ -20,6 +20,12 @@
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 15px;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    &:active {
+      opacity: 0.5;
+    }
 
     &:focus {
       border: 1px solid $primary_t2;
@@ -31,7 +37,7 @@ nav {
 
   .active,
   .special {
-    color: $primary_t1;
+
     border: 1px solid $primary_t2;
     border-radius: 15px;
   }
