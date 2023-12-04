@@ -1,52 +1,53 @@
 @import "config";
 
-
-
 * {
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 
   body {
-
-
     nav {
-
       position: fixed;
       top: 0;
       width: 100%;
-    
+
       .active,
       .special {
-    
         border: 1px solid $primary_t2;
         border-radius: 15px;
       }
-    
+
+      .dropdown {
+
+        visibility: hidden;
+      }
     }
 
     main {
-
-      background-image: url("/assets/img/bg2.png");
+      background-image: url("/assets/img/bg.png");
       background-size: cover;
+
+      position: relative;
+      height: 855px !important;
       display: flex;
       height: 100%;
       width: 100%;
       background-color: $lighter_t1;
-
-
+      top: 0;
+      bottom: 0;
 
       .image-bg {
-
-        height: 320px; 
+        height: 320px;
         top: 41.7%;
         box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
       }
     }
 
+    footer {
+      position: relative;
+    }
   }
-
 
   .middle {
     justify-content: center;
@@ -55,7 +56,6 @@
   }
 
   .button {
-
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 15px;
@@ -72,12 +72,12 @@
   }
 
   .button_2 {
-
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 15px;
     opacity: 1;
     transition: opacity 0.3s;
+    background-color: transparent;
 
     &:hover {
       border: 1px solid $primary_t2;
@@ -88,61 +88,166 @@
     }
   }
 
-
-  @media (max-width: 350px) {
-
-
-    nav {
-
-      background-color: #274c77;
-
-      a {
-        display: none !important;
-      }
-    }
-
+  @media (min-width: 1001px) and (max-width: 1300px) {
     main {
-
-      margin-top: 70px;
-      display: flex;
-      flex-direction: column;
-      height: 829px !important;
-
-      .left,
-      .right {
-
-        margin-top: 50px;
-        width: 100% !important;
-      }
-
       .image-bg {
-
-        width: 280px !important;
-        height: 150px !important;
-        top: 54.6% !important;
-      }
-
-      img {
-        
-        margin-top: 80px;
-        width: 250px;
+        width: 500px !important;
       }
     }
 
     footer {
-      display: flex;
-      flex-direction: column;
+      padding: 10px;
 
-      .center a{
-
-        margin: 8px !important;
-        padding: 0 !important;
+      .center {
+        a {
+          padding: 0px !important;
+        }
       }
     }
   }
 
+  @media (min-width: 351px) and (max-width: 1000px) {
 
+
+    nav {
+  
+      background-color: #274c77;
+      display: inline-block !important;
+  
+      ul {
+  
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+  
+      .nav-container {
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+      }
+      
+      .left,
+      .right {
+  
+        display: none !important;
+      }
+  
+      .center {
+  
+        margin: 0px !important;
+        display: flex;
+        justify-content: space-between !important;
+      }
+  
+      div {
+  
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+
+      .social {
+
+        display: none;
+      }
+
+  
+      .dropdown {
+
+        visibility: visible !important;
+        
+        .dropdown-content {
+
+          display: none;
+          position: absolute;
+          background-color: $primary_t1;
+          min-height: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+
+          a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+
+          .dropdown-content:hover .dropdown-content {
+          
+            display: block;
+          }
+
+        }
+      }
+  
+  
+    }
+    
+    main {
+      
+      margin-top: 90px;
+      display: flex !important;
+      flex-direction: column !important;
+
+      .left,
+      .right {
+
+        
+        width: 100% !important;
+      }
+  
+      .left {
+        margin-top: 4rem;
+      }
+  
+      
+      .right {
+  
+        margin-top: 6rem;
+      }
+  
+  
+      .image-bg {
+        width: 280px !important;
+        height: 150px !important;
+        top: 40% !important;
+      }
+  
+      img {
+        width: 250px !important;
+      }
+  
+    }
+  
+    footer {
+  
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  
+      .center {
+  
+        padding: 0 !important;
+  
+        div {
+  
+          background-color: white !important;
+          width: 100% !important;
+          display: flex !important;
+          justify-content: space-between !important;
+  
+          a {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
 }
-
-
-
