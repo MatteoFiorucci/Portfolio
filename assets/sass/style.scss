@@ -30,7 +30,7 @@
 
       overflow: hidden;
       position: relative;
-      height: 855px !important;
+      height: 905px !important;
       display: flex;
       height: 100%;
       width: 100%;
@@ -50,7 +50,8 @@
     }
 
     footer {
-      position: relative;
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -93,6 +94,26 @@
     }
   }
 
+  .button_3 {
+    
+    color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    background-color: transparent;
+
+    &::placeholder {
+
+      color: #f1f1f1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
   .about {
     cursor: default;
     .title {
@@ -108,6 +129,7 @@
     }
   }
 
+
   @media (min-width: 1001px) and (max-width: 1300px) {
     main {
       .image-bg {
@@ -117,6 +139,7 @@
 
     footer {
       padding: 10px;
+      position: unset !important;
 
       .center {
         a {
@@ -243,9 +266,15 @@
           padding: 4rem;
         }
       }
+
+      .form-container {
+
+        width: 90% !important;
+      }
     }
 
     footer {
+      position: unset !important;
       padding: 10px;
       display: flex;
       flex-direction: column;

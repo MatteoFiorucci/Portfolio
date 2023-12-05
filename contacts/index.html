@@ -144,8 +144,37 @@
       </div>
     </div>
   </nav>
-<main style="height: 3000px;">
-  <h1>Contacts</h1>
+<main>
+  <div class="middle w-100 mt-4">
+    <div class="form-container middle justify-content-center flex-column bg-darker p-3 rounded-5" style="width: 50%;">
+      <p class="h1 fw-bold p-2 text-primary">Contattami</p>
+      <form action="" method="post" class="needs-validation w-100">
+      <div class="container flex-column d-flex">
+        <div class="d-flex flex-column">
+          <label for="nome" class="p-1 mt-4 text-primary">Nome <span class="text-danger">*</span></label>
+          <input type="name" class="button_3 mb-2 border-bottom border-2" id="nome" placeholder="Nome" required/>
+        </div>
+        <div class="d-flex flex-column mb-4">
+          <label for="email" class="p-1 mt-4 text-primary">Email <span class="text-danger">*</span></label>
+          <input type="email" id="email" placeholder="Email" class="button_3 mb-2 border-bottom border-2 " required/>
+        </div>
+        <div class="d-flex flex-column">
+          <label for="subject" class="p-1 text-primary"> Messaggio</label>
+          <textarea
+            name="subject"
+            placeholder="Scrivi qui un messaggio.."
+            class="button_3 border border-2 rounded-2"
+            style="height: 200px;"
+
+          ></textarea>
+        </div>
+        <button class="button_2 text-decoration-none text-darker w-100 middle bg-lighter mt-4">Invia</button>
+        <p class="text-danger mt-3">* Obbligatori</p>
+      </div>
+
+      </form>
+    </div>
+  </div>
 </main>
 
 <footer

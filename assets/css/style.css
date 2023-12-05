@@ -453,7 +453,7 @@ a.text-darker:hover, a.text-darker:focus {
   background-size: cover;
   overflow: hidden;
   position: relative;
-  height: 855px !important;
+  height: 905px !important;
   display: flex;
   height: 100%;
   width: 100%;
@@ -470,7 +470,8 @@ a.text-darker:hover, a.text-darker:focus {
   visibility: hidden;
 }
 * body footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 * .middle {
   justify-content: center;
@@ -504,6 +505,20 @@ a.text-darker:hover, a.text-darker:focus {
 * .button_2:active {
   opacity: 0.5;
 }
+* .button_3 {
+  color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: transparent;
+}
+* .button_3::placeholder {
+  color: #f1f1f1;
+}
+* .button_3:focus {
+  outline: none;
+}
 * .about {
   cursor: default;
 }
@@ -522,6 +537,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * footer {
     padding: 10px;
+    position: unset !important;
   }
   * footer .center a {
     padding: 0px !important;
@@ -624,7 +640,11 @@ a.text-darker:hover, a.text-darker:focus {
   * main .drop .dropup {
     padding: 4rem;
   }
+  * main .form-container {
+    width: 90% !important;
+  }
   * footer {
+    position: unset !important;
     padding: 10px;
     display: flex;
     flex-direction: column;
