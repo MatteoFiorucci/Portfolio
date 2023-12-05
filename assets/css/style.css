@@ -444,7 +444,8 @@ a.text-darker:hover, a.text-darker:focus {
   border: 1px solid #90bfe6;
   border-radius: 15px;
 }
-* body nav .dropdown {
+* body nav .dropdown,
+* body nav .logo {
   visibility: hidden;
 }
 * body main {
@@ -463,6 +464,9 @@ a.text-darker:hover, a.text-darker:focus {
   height: 320px;
   top: 41.7%;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+* body main .drop {
+  visibility: hidden;
 }
 * body footer {
   position: relative;
@@ -499,6 +503,15 @@ a.text-darker:hover, a.text-darker:focus {
 * .button_2:active {
   opacity: 0.5;
 }
+* .about {
+  cursor: default;
+}
+* .about .title {
+  transition: margin-left 0.3s;
+}
+* .about .title:hover {
+  margin-left: 7px;
+}
 @media (min-width: 1001px) and (max-width: 1300px) {
   * main .image-bg {
     width: 500px !important;
@@ -514,6 +527,7 @@ a.text-darker:hover, a.text-darker:focus {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
+    z-index: 10000 !important;
   }
   * nav ul {
     margin: 0 !important;
@@ -542,7 +556,12 @@ a.text-darker:hover, a.text-darker:focus {
   * nav .social {
     display: none;
   }
+  * nav .logo {
+    visibility: visible !important;
+    width: 90px;
+  }
   * nav .dropdown {
+    width: 100% !important;
     visibility: visible !important;
   }
   * nav .dropdown .dropdown-content {
@@ -587,6 +606,19 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main img {
     width: 250px !important;
+  }
+  * main .about {
+    display: none;
+  }
+  * main .drop {
+    width: 100% !important;
+    z-index: 0 !important;
+    visibility: visible !important;
+    margin-top: 1rem;
+  }
+  * main .drop .dropdown,
+  * main .drop .dropup {
+    padding: 4rem;
   }
   * footer {
     padding: 10px;
