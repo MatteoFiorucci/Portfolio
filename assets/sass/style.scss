@@ -30,6 +30,7 @@
       background-image: url("/assets/img/bg.png");
       background-size: cover;
 
+      overflow: hidden;
       position: relative;
       height: 855px !important;
       display: flex;
@@ -48,6 +49,7 @@
       .drop {
 
         visibility: hidden;
+
       }
     }
 
