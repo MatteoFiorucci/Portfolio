@@ -1,7 +1,7 @@
 @import "config";
 
 * {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -20,10 +20,8 @@
 
       .dropdown,
       .logo {
-
         visibility: hidden;
       }
-
     }
 
     main {
@@ -43,13 +41,11 @@
       .image-bg {
         height: 320px;
         top: 41.7%;
-        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
       }
 
       .drop {
-
         visibility: hidden;
-
       }
     }
 
@@ -98,20 +94,17 @@
   }
 
   .about {
-
     cursor: default;
-
-
     .title {
-
       transition: margin-left 0.3s;
 
       &:hover {
-
         margin-left: 7px;
       }
+    }
 
-      
+    .description {
+      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
     }
   }
 
@@ -134,70 +127,58 @@
   }
 
   @media (min-width: 351px) and (max-width: 1000px) {
-
-
     nav {
-  
       background-color: #274c77;
       display: inline-block !important;
       z-index: 10000 !important;
-  
+
       ul {
-  
         margin: 0 !important;
         padding: 0 !important;
       }
-  
+
       .nav-container {
-  
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100% !important;
       }
-      
+
       .left,
       .right {
-  
         display: none !important;
       }
-  
+
       .center {
-  
         margin: 0px !important;
         display: flex;
         justify-content: space-between !important;
       }
-  
+
       div {
-  
         display: flex;
         width: 100%;
         align-items: center;
       }
 
       .social {
-
         display: none;
       }
 
       .logo {
-
         visibility: visible !important;
         width: 90px;
       }
       .dropdown {
-
         width: 100% !important;
         visibility: visible !important;
-        
-        .dropdown-content {
 
+        .dropdown-content {
           display: none;
           position: absolute;
           background-color: $primary_t1;
           min-height: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
 
           a {
@@ -212,58 +193,45 @@
           }
 
           .dropdown-content:hover .dropdown-content {
-          
             display: block;
           }
-
         }
       }
-  
-  
     }
-    
+
     main {
-      
       margin-top: 90px;
       display: flex !important;
       flex-direction: column !important;
 
       .left,
       .right {
-
-        
         width: 100% !important;
       }
-  
+
       .left {
         margin-top: 4rem;
       }
-  
-      
+
       .right {
-  
         margin-top: 6rem;
       }
-  
-  
+
       .image-bg {
         width: 280px !important;
         height: 150px !important;
         top: 40% !important;
       }
-  
+
       img {
         width: 250px !important;
       }
 
-
       .about {
-
         display: none;
       }
 
       .drop {
-
         width: 100% !important;
         z-index: 0 !important;
         visibility: visible !important;
@@ -272,33 +240,26 @@
 
         .dropdown,
         .dropup {
-
           padding: 4rem;
-
         }
-
       }
-  
     }
-  
+
     footer {
-  
       padding: 10px;
       display: flex;
       flex-direction: column;
       text-align: center;
-  
+
       .center {
-  
         padding: 0 !important;
-  
+
         div {
-  
           background-color: white !important;
           width: 100% !important;
           display: flex !important;
           justify-content: space-between !important;
-  
+
           a {
             margin: 0 !important;
           }
