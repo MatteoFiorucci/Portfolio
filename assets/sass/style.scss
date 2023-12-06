@@ -140,6 +140,7 @@
     footer {
       padding: 10px;
       position: unset !important;
+      flex-direction: column;
 
       .center {
         a {
@@ -249,6 +250,10 @@
       img {
         width: 250px !important;
       }
+      
+      .form-container {
+        width: 90% !important;
+      }
 
       .about {
         display: none;
@@ -265,12 +270,13 @@
         .dropup {
           padding: 4rem;
         }
+
+        img {
+
+          width: 10px !important;
+        }
       }
 
-      .form-container {
-
-        width: 90% !important;
-      }
     }
 
     footer {

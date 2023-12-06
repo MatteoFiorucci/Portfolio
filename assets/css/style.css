@@ -538,6 +538,7 @@ a.text-darker:hover, a.text-darker:focus {
   * footer {
     padding: 10px;
     position: unset !important;
+    flex-direction: column;
   }
   * footer .center a {
     padding: 0px !important;
@@ -627,6 +628,9 @@ a.text-darker:hover, a.text-darker:focus {
   * main img {
     width: 250px !important;
   }
+  * main .form-container {
+    width: 90% !important;
+  }
   * main .about {
     display: none;
   }
@@ -640,8 +644,8 @@ a.text-darker:hover, a.text-darker:focus {
   * main .drop .dropup {
     padding: 4rem;
   }
-  * main .form-container {
-    width: 90% !important;
+  * main .drop img {
+    width: 10px !important;
   }
   * footer {
     position: unset !important;
