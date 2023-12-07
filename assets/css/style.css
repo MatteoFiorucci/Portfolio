@@ -647,6 +647,16 @@ a.text-darker:hover, a.text-darker:focus {
   * main .drop img {
     width: 10px !important;
   }
+  * main .description .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * main .description .info span {
+    margin: 0 !important;
+    width: fit-content !important;
+    padding-top: 10px !important;
+  }
   * footer {
     position: unset !important;
     padding: 10px;

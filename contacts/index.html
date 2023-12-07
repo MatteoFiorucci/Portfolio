@@ -277,24 +277,22 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      (function () {
-        emailjs.init("VdAtUOwEsP-QQep0W");
-      })();
-    </script>
-    <script>
-      const handleForm = async (e) => {
-        try {
-          await emailjs.sendForm(
-            "service_rhgywq7",
-            "template_th03ci4",
-            document.getElementById("contact-form")
-          );
-          alert("Email Inviata!");
-        } catch (error) {
-          console.error(error);
-          alert("Errore nell' invio");
-        }
-      };
-    </script>
+      emailjs.init("VdAtUOwEsP-QQep0W");
+  </script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_rhgywq7", "template_th03ci4", this)
+            .then(function(response) {
+              alert("Email Inviata!");
+
+                // Reset the form after successful submission
+                document.getElementById("contact-form").reset();
+            }, function(error) {
+                console.log("Errore nell' invio:", error);
+            });
+    });
+</script>
   </body>
 </html>
