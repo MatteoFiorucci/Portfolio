@@ -691,6 +691,9 @@ a.text-darker:hover, a.text-darker:focus {
   * main .drop img {
     width: 10px !important;
   }
+  * main .description {
+    box-shadow: none !important;
+  }
   * main .description .info {
     display: flex;
     flex-direction: column;
@@ -740,7 +743,6 @@ a.text-darker:hover, a.text-darker:focus {
     padding: 0 !important;
   }
   * footer .center div {
-    background-color: white !important;
     width: 100% !important;
     display: flex !important;
     justify-content: space-between !important;

@@ -327,9 +327,12 @@
         img {
           width: 10px !important;
         }
+        
       }
 
       .description {
+
+        box-shadow: none !important;
         .info {
           display: flex;
           flex-direction: column;
@@ -388,7 +391,6 @@
         padding: 0 !important;
 
         div {
-          background-color: white !important;
           width: 100% !important;
           display: flex !important;
           justify-content: space-between !important;
