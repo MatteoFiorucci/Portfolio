@@ -553,6 +553,9 @@ a.text-darker:hover, a.text-darker:focus {
   * main .port a img {
     width: 30px !important;
   }
+  * main .port a .caption {
+    width: 370px !important;
+  }
   * main .about {
     display: none;
   }
@@ -569,6 +572,9 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .drop img {
     width: 10px !important;
+  }
+  * main .drop .description {
+    box-shadow: none;
   }
   * main .form-container {
     padding: 2rem !important;
@@ -731,6 +737,9 @@ a.text-darker:hover, a.text-darker:focus {
   * main .port div a .caption {
     width: 314px !important;
     height: 200px;
+  }
+  * main .slide {
+    display: none !important;
   }
   * footer {
     position: unset !important;

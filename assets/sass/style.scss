@@ -154,6 +154,10 @@
           img {
             width: 30px !important;
           }
+
+          .caption {
+            width: 370px !important;
+          }
         }
       }
 
@@ -176,6 +180,10 @@
 
         img {
           width: 10px !important;
+        }
+
+        .description {
+          box-shadow: none;
         }
       }
       .form-container {
@@ -327,11 +335,9 @@
         img {
           width: 10px !important;
         }
-        
       }
 
       .description {
-
         box-shadow: none !important;
         .info {
           display: flex;
@@ -376,7 +382,10 @@
             }
           }
         }
+      }
 
+      .slide {
+        display: none !important;
       }
     }
 
