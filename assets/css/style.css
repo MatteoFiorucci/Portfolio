@@ -732,7 +732,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .port div a img {
     width: 20px !important;
-    height: fit-content !important;
+    height: 20px !important;
   }
   * main .port div a .caption {
     width: 314px !important;
