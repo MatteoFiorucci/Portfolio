@@ -730,7 +730,7 @@ a.text-darker:hover, a.text-darker:focus {
     margin-top: 15px !important;
     width: 100%;
   }
-  * main .port div a img {
+  * main .port div a .git {
     width: 20px !important;
     height: 20px !important;
   }
