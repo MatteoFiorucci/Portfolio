@@ -736,7 +736,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .port div a .caption {
     width: 314px !important;
-    height: 200px;
+    height: 200px !important;
   }
   * main .slide {
     display: none !important;
