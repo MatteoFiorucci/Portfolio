@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta propriety="og:type" content="portfolio" />
     <meta propriety="og:title" content="Portfolio | Matteo Fiorucci" />
-    <meta propriety="og:url" content="https://matteofiorucci.github.io/Portfolio/" />
-    <meta propriety="og:image" content="https://live.staticflickr.com/65535/53382744681_4e2e9c8e67_b.jpg" />
+    <meta
+      propriety="og:url"
+      content="https://matteofiorucci.github.io/Portfolio/"
+    />
+    <meta
+      propriety="og:image"
+      content="https://live.staticflickr.com/65535/53382744681_4e2e9c8e67_b.jpg"
+    />
     <title>Matteo Fiorucci | Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -31,9 +37,11 @@
       <div class="nav-container d-flex w-100 text-center">
         <div class="d-flex w-100 left">
           <div class="middle w-100 justify-content-around">
-            <img width="90" src="assets/img/logo_portfolio.png" alt="" />
+            <a href="/" class="text-decoraton-none">
+              <img width="90" src="assets/img/logo_portfolio.png" alt="" />
+            </a>
             <a
-              href="#"
+              href="/"
               class="middle text-decoration-none text-primary active button"
               style="width: fit-content"
               >Home</a
@@ -71,12 +79,14 @@
             >
               <img width="30" src="assets/img/github.png" alt="Github" />
             </a>
-            <img
+            <a href="/" class="text-decoration-none">
+              <img
               class="logo"
               width="0"
               src="assets/img/logo_portfolio.png"
               alt=""
             />
+            </a>
             <div class="dropdown d-flex justify-content-end" style="width: 0">
               <a
                 class="dropdown-toggle button_2 text-decoration-none text-lighter"
@@ -112,7 +122,7 @@
                   <a
                     href="portfolio/"
                     class="middle text-decoration-none text-primary button dropdown-item"
-                    >Portfolio</a
+                    >Galleria</a
                   >
                 </li>
                 <li>
@@ -131,7 +141,7 @@
             <a
               href="portfolio/"
               class="middle text-decoration-none text-primary button"
-              >Portfolio</a
+              >Galleria</a
             >
             <a
               href="contacts/"
@@ -142,13 +152,14 @@
         </div>
       </div>
     </nav>
-
-    <main class="z-2">
+    
+    <main class="z-2 position-relative">
       <section class="w-50 middle left">
         <div class="flex-column text-center mt-5 px-5">
           <p class="h3 p-3 fw-bold">Ciao, sono Matteo! 👋</p>
           <p class="h2 p-2 border-bottom border-4 pb-4 border-darker rounded-1">
-            Sono un appassionato Sviluppatore <span class="fw-bold">Front-End</span> con sede in Italia.
+            Sono un appassionato Sviluppatore
+            <span class="fw-bold">Front-End</span> con sede in Italia.
           </p>
         </div>
       </section>
@@ -163,65 +174,60 @@
           alt="Foto Profilo"
         />
       </section>
+      <section>
+        <div
+          class="slide position-absolute bg-darker rounded-5 middle previous"
+          style="left: 1%; bottom: 44.4%; height: 30px"
+        >
+          <a
+            class="text-decoration-none text-lighter fw-bold fs-5 button_3"
+            href="contacts/"
+            >&#60;</a
+          >
+        </div>
 
-      <div
-        class="slide position-absolute bg-darker rounded-5 middle z-3"
-        style="right: 1%; bottom: 50%; height: 30px"
-      >
-        <a
-          class="text-decoration-none text-lighter fw-bold fs-5 button_3"
-          href="about_me/"
-          >&#62;</a
+        <div
+          class="slide position-absolute bg-darker rounded-5 middle z-3 next"
+          style="right: 1%; bottom: 44.4%; height: 30px"
         >
-      </div>
-      <div
-        class="slide position-absolute bg-darker rounded-5 middle"
-        style="left: 1%; bottom: 50%; height: 30px"
-      >
-        <a
-          class="text-decoration-none text-lighter fw-bold fs-5 button_3"
-          href="contacts/"
-          >&#60;</a
-        >
-      </div>
+          <a
+            class="text-decoration-none text-lighter fw-bold fs-5 button_3"
+            href="about_me/"
+            >&#62;</a
+          >
+        </div>
+      </section>
     </main>
 
     <footer
       class="d-flex w-100 bg-darker text-primary justify-content-between middle left"
     >
-      <section class="ms-3">
-        <p class="h5">
-          Email:<span class="h6"> matteofiorucci123@gmail.com </span>
-        </p>
-        <p class="h5">Telefono:<span class="h6"> +39 342 533 7098 </span></p>
-      </section>
-
       <section class="d-flex center">
         <div>
           <a
             class="m-4 text-primary text-decoration-none button_2 middle"
-            href="#"
+            href="../"
             >Home</a
           >
         </div>
         <div>
           <a
             class="m-4 text-primary text-decoration-none button_2 middle"
-            href="about_me/"
+            href="../about_me/"
             >Abot Me</a
           >
         </div>
         <div>
           <a
             class="m-4 text-primary text-decoration-none button_2 middle"
-            href="portfolio/"
-            >Portfolio</a
+            href="../portfolio/"
+            >Galleria</a
           >
         </div>
         <div>
           <a
             class="m-4 text-primary text-decoration-none button_2 middle"
-            href="contacts/"
+            href="../contacts/"
             >Contattami</a
           >
         </div>
@@ -234,7 +240,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img width="30" src="assets/img/instagram.png" alt="Instagram" />
+          <img width="30" src="../assets/img/instagram.png" alt="Instagram" />
         </a>
         <a
           class="m-4 button_2"
@@ -242,7 +248,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img width="30" src="assets/img/linkedin.png" alt="Linkedin" />
+          <img width="30" src="../assets/img/linkedin.png" alt="Linkedin" />
         </a>
         <a
           class="m-4 button_2"
@@ -250,10 +256,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img width="30" src="assets/img/github.png" alt="Github" />
+          <img width="30" src="../assets/img/github.png" alt="Github" />
         </a>
       </section>
-
       <section class="d-flex justify-content-center m-4">
         <p class="m-0">Matteo Fiorucci | © Tutti i diritti riservati</p>
       </section>
