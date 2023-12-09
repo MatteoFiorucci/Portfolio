@@ -670,6 +670,7 @@ a.text-darker:hover, a.text-darker:focus {
     display: none !important;
   }
   * main .port .description {
+    width: 43vh !important;
     padding-bottom: 10px !important;
     padding-top: 10px !important;
     box-shadow: none !important;
