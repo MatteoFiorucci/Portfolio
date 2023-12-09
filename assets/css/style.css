@@ -15,6 +15,13 @@
   margin-left: 7px;
 }
 
+.title-2 {
+  transition: color 0.3s;
+}
+.title-2:hover {
+  color: #3895e0 !important;
+}
+
 /*------------------------------------
 - COLOR primary
 ------------------------------------*/
@@ -515,7 +522,7 @@ a.text-darker:hover, a.text-darker:focus {
 * body main {
   background-image: url("../img/bg.png");
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   width: 100%;
@@ -525,16 +532,13 @@ a.text-darker:hover, a.text-darker:focus {
 }
 * body main .image-bg {
   height: 320px;
-  top: 41.7%;
+  top: 43%;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
 }
 * body main .drop {
   visibility: hidden;
 }
-* body footer {
-  height: 10vh;
-}
-@media (min-width: 351px) and (max-width: 1000px) {
+@media (max-width: 329px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
@@ -597,17 +601,319 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main {
     margin-top: 90px;
-    padding-bottom: 70px;
     display: flex !important;
     flex-direction: column !important;
+    height: 130vh !important;
+  }
+  * main .left,
+  * main .right {
+    width: 100% !important;
+  }
+  * main .right {
+    margin-top: 5rem;
+  }
+  * main .image-bg {
+    width: 280px !important;
+    height: 150px !important;
+    top: 25% !important;
+  }
+  * main img {
+    width: 200px !important;
+  }
+  * main .form-container {
+    width: 90% !important;
+  }
+  * main .about {
+    display: none;
+  }
+  * main .drop {
+    width: 100% !important;
+    z-index: 0 !important;
+    visibility: visible !important;
+    margin-top: 1rem;
+  }
+  * main .drop .me {
+    padding: 1.5rem !important;
+  }
+  * main .drop .dropdown,
+  * main .drop .dropup {
+    padding: 4rem;
+  }
+  * main .drop img {
+    width: 10px !important;
+  }
+  * main .port {
+    flex-direction: column !important;
+    width: fit-content;
+    height: 100%;
+  }
+  * main .port div {
+    align-items: center !important;
+    display: flex;
     height: fit-content !important;
+    text-align: center !important;
+    flex-direction: column !important;
+  }
+  * main .port div a {
+    display: flex;
+    text-align: center;
+    margin: 0 !important;
+    width: fit-content !important;
+  }
+  * main .port div a .git {
+    display: none;
+  }
+  * main .port div a .caption {
+    display: none !important;
+  }
+  * main .port .description {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    box-shadow: none !important;
+  }
+  * main .port .description .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * main .port .description .info span {
+    margin: 0 !important;
+    width: fit-content !important;
+    padding-top: 10px !important;
+  }
+  * main .slide {
+    display: none !important;
+  }
+  * footer {
+    top: 130vh !important;
+  }
+}
+@media (min-width: 330px) and (max-width: 389px) {
+  * nav {
+    background-color: #274c77;
+    display: inline-block !important;
+    z-index: 10000 !important;
+  }
+  * nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  * nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+  }
+  * nav .left,
+  * nav .right {
+    display: none !important;
+  }
+  * nav .center {
+    margin: 0px !important;
+    display: flex;
+    justify-content: space-between !important;
+  }
+  * nav div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  * nav .social {
+    display: none;
+  }
+  * nav .logo {
+    visibility: visible !important;
+    width: 90px;
+  }
+  * nav .dropdown {
+    width: 100% !important;
+    visibility: visible !important;
+  }
+  * nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A3CEF1;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  * nav .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  * nav .dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  * nav .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
+    display: block;
+  }
+  * main {
+    margin-top: 90px;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 130vh !important;
   }
   * main .left,
   * main .right {
     width: 100% !important;
   }
   * main .left {
-    margin-top: 4rem;
+    margin-top: 3rem;
+  }
+  * main .right {
+    margin-top: 6rem;
+  }
+  * main .image-bg {
+    width: 280px !important;
+    height: 150px !important;
+    top: 25% !important;
+  }
+  * main img {
+    width: 200px !important;
+  }
+  * main .form-container {
+    width: 90% !important;
+  }
+  * main .about {
+    display: none;
+  }
+  * main .drop {
+    width: 100% !important;
+    z-index: 0 !important;
+    visibility: visible !important;
+    margin-top: 1rem;
+  }
+  * main .drop .me {
+    padding: 1.5rem !important;
+  }
+  * main .drop .dropdown,
+  * main .drop .dropup {
+    padding: 4rem;
+  }
+  * main .drop img {
+    width: 10px !important;
+  }
+  * main .port {
+    flex-direction: column !important;
+    width: fit-content;
+    height: 100%;
+  }
+  * main .port div {
+    align-items: center !important;
+    display: flex;
+    height: fit-content !important;
+    text-align: center !important;
+    flex-direction: column !important;
+  }
+  * main .port div a {
+    display: flex;
+    text-align: center;
+    margin: 0 !important;
+    width: fit-content !important;
+  }
+  * main .port div a .git {
+    display: none;
+  }
+  * main .port div a .caption {
+    display: none !important;
+  }
+  * main .port .description {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    box-shadow: none !important;
+  }
+  * main .port .description .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * main .port .description .info span {
+    margin: 0 !important;
+    width: fit-content !important;
+    padding-top: 10px !important;
+  }
+  * main .slide {
+    display: none !important;
+  }
+  * footer {
+    top: 130vh !important;
+  }
+}
+@media (min-width: 390px) and (max-width: 890px) {
+  * nav {
+    background-color: #274c77;
+    display: inline-block !important;
+    z-index: 10000 !important;
+  }
+  * nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  * nav .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+  }
+  * nav .left,
+  * nav .right {
+    display: none !important;
+  }
+  * nav .center {
+    margin: 0px !important;
+    display: flex;
+    justify-content: space-between !important;
+  }
+  * nav div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  * nav .social {
+    display: none;
+  }
+  * nav .logo {
+    visibility: visible !important;
+    width: 90px;
+  }
+  * nav .dropdown {
+    width: 100% !important;
+    visibility: visible !important;
+  }
+  * nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A3CEF1;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  * nav .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  * nav .dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  * nav .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
+    display: block;
+  }
+  * main {
+    margin-top: 90px;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+  }
+  * main .left,
+  * main .right {
+    width: 100% !important;
+  }
+  * main .left {
+    margin-top: 3rem;
   }
   * main .right {
     margin-top: 6rem;
@@ -642,19 +948,6 @@ a.text-darker:hover, a.text-darker:focus {
   * main .drop img {
     width: 10px !important;
   }
-  * main .description {
-    box-shadow: none !important;
-  }
-  * main .description .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  * main .description .info span {
-    margin: 0 !important;
-    width: fit-content !important;
-    padding-top: 10px !important;
-  }
   * main .port {
     flex-direction: column !important;
   }
@@ -683,41 +976,41 @@ a.text-darker:hover, a.text-darker:focus {
     width: 314px !important;
     height: 150px !important;
   }
+  * main .port .description {
+    box-shadow: none !important;
+    padding: 20px 0 20px 0 !important;
+  }
+  * main .port .description .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  * main .port .description .info span {
+    margin: 0 !important;
+    width: fit-content !important;
+    padding-top: 10px !important;
+  }
   * main .slide {
     display: none !important;
   }
   * footer {
-    height: fit-content !important;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  * footer .center {
-    padding: 0 !important;
-  }
-  * footer .center div {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: space-between !important;
-  }
-  * footer .center div a {
-    margin: 0 !important;
+    top: 100% !important;
   }
 }
-@media (min-width: 1001px) and (max-width: 1300px) {
+@media (min-width: 891px) and (max-width: 1200px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
     z-index: 10000 !important;
   }
   * main {
-    height: fit-content !important;
+    height: 150vh !important;
     margin-top: 90px;
-    padding-bottom: 80px;
+    padding-bottom: 90px !important;
   }
   * main .image-bg {
     width: 500px !important;
+    top: 46.4% !important;
   }
   * main .port {
     margin-top: 100px;
@@ -766,11 +1059,71 @@ a.text-darker:hover, a.text-darker:focus {
     display: none;
   }
   * footer {
-    height: fit-content !important;
-    padding: 10px;
-    flex-direction: column;
+    top: 152vh !important;
   }
-  * footer .center a {
-    padding: 0px !important;
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  * nav {
+    background-color: #274c77;
+    display: inline-block !important;
+    z-index: 10000 !important;
+  }
+  * main {
+    height: 110vh !important;
+    margin-top: 90px;
+    padding-bottom: 90px !important;
+  }
+  * main .image-bg {
+    width: 500px !important;
+    top: 41.2% !important;
+  }
+  * main .port {
+    margin-top: 100px;
+  }
+  * main .port div {
+    padding: 2rem !important;
+    margin: 0 20px 0 20px;
+  }
+  * main .port img {
+    width: 400px !important;
+  }
+  * main .port a img {
+    width: 30px !important;
+  }
+  * main .port a .caption {
+    width: 450px !important;
+  }
+  * main .about {
+    display: none;
+  }
+  * main .drop {
+    margin-top: 100px !important;
+    width: 100% !important;
+    z-index: 0 !important;
+    visibility: visible !important;
+    margin-top: 1rem;
+  }
+  * main .drop .dropdown,
+  * main .drop .dropup {
+    padding: 4rem;
+  }
+  * main .drop img {
+    width: 10px !important;
+  }
+  * main .drop .description {
+    box-shadow: none;
+  }
+  * main .form-container {
+    padding: 2rem !important;
+    margin-top: 90px !important;
+    margin-bottom: 10px !important;
+    width: 90% !important;
+  }
+  * main .next,
+  * main .previous {
+    display: none;
+  }
+  * footer {
+    top: 112vh !important;
   }
 }/*# sourceMappingURL=style.css.map */

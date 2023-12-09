@@ -19,6 +19,14 @@ $font-stack: 'Montserrat', Arial, sans-serif;
   }
 }
 
+.title-2 {
+  transition: color 0.3s;
+
+  &:hover {
+    color: #3895e0 !important;
+  }
+}
+
 
 
 /*------------------------------------
