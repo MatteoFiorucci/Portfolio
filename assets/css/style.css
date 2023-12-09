@@ -538,157 +538,7 @@ a.text-darker:hover, a.text-darker:focus {
 * body main .drop {
   visibility: hidden;
 }
-@media (max-width: 329px) {
-  * nav {
-    background-color: #274c77;
-    display: inline-block !important;
-    z-index: 10000 !important;
-  }
-  * nav ul {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  * nav .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100% !important;
-  }
-  * nav .left,
-  * nav .right {
-    display: none !important;
-  }
-  * nav .center {
-    margin: 0px !important;
-    display: flex;
-    justify-content: space-between !important;
-  }
-  * nav div {
-    display: flex;
-    width: 100%;
-    align-items: center;
-  }
-  * nav .social {
-    display: none;
-  }
-  * nav .logo {
-    visibility: visible !important;
-    width: 90px;
-  }
-  * nav .dropdown {
-    width: 100% !important;
-    visibility: visible !important;
-  }
-  * nav .dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #A3CEF1;
-    min-height: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  * nav .dropdown .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  * nav .dropdown .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  * nav .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
-    display: block;
-  }
-  * main {
-    margin-top: 90px;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 130vh !important;
-  }
-  * main .left,
-  * main .right {
-    width: 100% !important;
-  }
-  * main .right {
-    margin-top: 5rem;
-  }
-  * main .image-bg {
-    width: 280px !important;
-    height: 150px !important;
-    top: 25% !important;
-  }
-  * main img {
-    width: 200px !important;
-  }
-  * main .form-container {
-    width: 90% !important;
-  }
-  * main .about {
-    display: none;
-  }
-  * main .drop {
-    width: 100% !important;
-    z-index: 0 !important;
-    visibility: visible !important;
-    margin-top: 1rem;
-  }
-  * main .drop .me {
-    padding: 1.5rem !important;
-  }
-  * main .drop .dropdown,
-  * main .drop .dropup {
-    padding: 4rem;
-  }
-  * main .drop img {
-    width: 10px !important;
-  }
-  * main .port {
-    flex-direction: column !important;
-    width: fit-content;
-    height: 100%;
-  }
-  * main .port div {
-    align-items: center !important;
-    display: flex;
-    height: fit-content !important;
-    text-align: center !important;
-    flex-direction: column !important;
-  }
-  * main .port div a {
-    display: flex;
-    text-align: center;
-    margin: 0 !important;
-    width: fit-content !important;
-  }
-  * main .port div a .git {
-    display: none;
-  }
-  * main .port div a .caption {
-    display: none !important;
-  }
-  * main .port .description {
-    padding-bottom: 10px !important;
-    padding-top: 10px !important;
-    box-shadow: none !important;
-  }
-  * main .port .description .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  * main .port .description .info span {
-    margin: 0 !important;
-    width: fit-content !important;
-    padding-top: 10px !important;
-  }
-  * main .slide {
-    display: none !important;
-  }
-  * footer {
-    top: 130vh !important;
-  }
-}
-@media (min-width: 330px) and (max-width: 389px) {
+@media (min-width: 320px) and (max-width: 480px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
@@ -841,7 +691,7 @@ a.text-darker:hover, a.text-darker:focus {
     top: 130vh !important;
   }
 }
-@media (min-width: 390px) and (max-width: 890px) {
+@media (min-width: 481px) and (max-width: 768px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
@@ -997,7 +847,7 @@ a.text-darker:hover, a.text-darker:focus {
     top: 100% !important;
   }
 }
-@media (min-width: 891px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
@@ -1062,7 +912,7 @@ a.text-darker:hover, a.text-darker:focus {
     top: 152vh !important;
   }
 }
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
