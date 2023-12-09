@@ -1,3 +1,20 @@
+.description {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+}
+
+.middle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  transition: margin-left 0.3s;
+}
+.title:hover {
+  margin-left: 7px;
+}
+
 /*------------------------------------
 - COLOR primary
 ------------------------------------*/
@@ -428,11 +445,58 @@ a.text-darker:hover, a.text-darker:focus {
   color: #1a3350 !important;
 }
 
+.button {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.button:active {
+  opacity: 0.5;
+}
+.button:focus {
+  border: 1px solid #90bfe6;
+}
+
+.button_2 {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: transparent;
+}
+.button_2:hover {
+  border: 1px solid #90bfe6;
+}
+.button_2:active {
+  opacity: 0.5;
+}
+
+.button_3 {
+  color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: transparent;
+}
+.button_3::placeholder {
+  color: #f1f1f1;
+}
+.button_3:focus {
+  outline: none;
+}
+
 * {
   font-family: "Montserrat", Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+* body {
+  cursor: default;
 }
 * body nav {
   position: fixed;
@@ -469,64 +533,6 @@ a.text-darker:hover, a.text-darker:focus {
 }
 * body footer {
   height: 10vh;
-}
-* .description {
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
-}
-* .middle {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-* .button {
-  border: 1px solid transparent;
-  padding: 10px;
-  border-radius: 15px;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-* .button:active {
-  opacity: 0.5;
-}
-* .button:focus {
-  border: 1px solid #90bfe6;
-}
-* .button_2 {
-  border: 1px solid transparent;
-  padding: 10px;
-  border-radius: 15px;
-  opacity: 1;
-  transition: opacity 0.3s;
-  background-color: transparent;
-}
-* .button_2:hover {
-  border: 1px solid #90bfe6;
-}
-* .button_2:active {
-  opacity: 0.5;
-}
-* .button_3 {
-  color: #f1f1f1;
-  border: none;
-  padding: 10px;
-  opacity: 1;
-  transition: opacity 0.3s;
-  background-color: transparent;
-}
-* .button_3::placeholder {
-  color: #f1f1f1;
-}
-* .button_3:focus {
-  outline: none;
-}
-* .about {
-  cursor: default;
-}
-* .about .title {
-  transition: margin-left 0.3s;
-}
-* .about .title:hover {
-  margin-left: 7px;
 }
 @media (min-width: 351px) and (max-width: 1000px) {
   * nav {

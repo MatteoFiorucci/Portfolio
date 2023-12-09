@@ -1,0 +1,49 @@
+.button {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border: 1px solid $primary_t2;
+  }
+}
+
+.button_2 {
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid $primary_t2;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button_3 {
+  color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background-color: transparent;
+
+  &::placeholder {
+    color: #f1f1f1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
