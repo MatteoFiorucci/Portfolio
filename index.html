@@ -33,63 +33,61 @@
     <script defer src="assets/js/script.js"></script>
   </head>
   <body>
-    <nav class="z-3">
-      <div class="nav-container d-flex w-100 text-center">
-        <div class="d-flex w-100 left">
-          <div class="middle w-100 justify-content-around">
-            <a href="" class="text-decoraton-none">
-              <img width="90" src="assets/img/logo_portfolio.png" alt="" />
+    <nav>
+      <div class="nav-container">
+        <section class="subcontainer1 left">
+          <div class="middle">
+            <a href="" class="logo-navbar">
+              <img src="assets/img/logo_portfolio.png" alt="Logo" />
             </a>
             <a
               href=""
-              class="middle text-decoration-none text-primary active button"
-              style="width: fit-content"
+              class="text-primary active button"
               >Home</a
             >
             <a
               href="about_me/"
-              class="middle text-decoration-none text-primary button"
+              class="text-primary button"
               >About Me</a
             >
           </div>
-        </div>
-        <div class="container text-center center">
+        </section>
+        <section class="subcontainer2 center">
           <div class="middle">
             <a
-              class="m-4 button_2 text-decoration-none social"
+              class="button_2 social"
               href="https://www.instagram.com/matteo.fiorucci/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img width="25" src="assets/img/instagram.png" alt="Instagram" />
+              <img src="assets/img/instagram.png" alt="Instagram" />
             </a>
             <a
-              class="m-4 button_2 text-decoration-none social"
+              class="button_2 social"
               href="https://www.linkedin.com/in/matteo-fiorucci/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img width="25" src="assets/img/linkedin.png" alt="Linkedin" />
+              <img src="assets/img/linkedin.png" alt="Linkedin" />
             </a>
             <a
-              class="m-4 button_2 text-decoration-none social"
+              class="button_2 social"
               href="https://github.com/MatteoFiorucci"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img width="30" src="assets/img/github.png" alt="Github" />
+              <img src="assets/img/github.png" alt="Github" />
             </a>
-            <a href="/" class="text-decoration-none">
+            <a href="/">
               <img
               class="logo"
-              width="0"
               src="assets/img/logo_portfolio.png"
-              alt=""
+              alt="Logo"
             />
             </a>
-            <div class="dropdown d-flex justify-content-end" style="width: 0">
+            <div class="dropdown">
               <a
-                class="dropdown-toggle button_2 text-decoration-none text-lighter"
+                class="dropdown-toggle button_2"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -97,8 +95,6 @@
               >
                 <img
                   class="more"
-                  width="25"
-                  height="25"
                   src="assets/img/more.png"
                   alt=""
                 />
@@ -107,91 +103,89 @@
                 <li>
                   <a
                     href="#"
-                    class="middle text-decoration-none text-primary button dropdown-item"
+                    class="button dropdown-item"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
                     href="about_me/"
-                    class="middle text-decoration-none text-primary button dropdown-item"
+                    class="button dropdown-item"
                     >About Me</a
                   >
                 </li>
                 <li>
                   <a
                     href="portfolio/"
-                    class="middle text-decoration-none text-primary button dropdown-item"
+                    class="button dropdown-item"
                     >Galleria</a
                   >
                 </li>
                 <li>
                   <a
                     href="contacts/"
-                    class="middle text-decoration-none text-primary button dropdown-item"
+                    class="button dropdown-item"
                     >Contattami</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="d-flex w-100 right">
-          <div class="middle w-100 justify-content-around">
+        </section>
+        <section class="subcontainer3 right">
+          <div class="middle">
             <a
               href="portfolio/"
-              class="middle text-decoration-none text-primary button"
+              class="text-primary button"
               >Galleria</a
             >
             <a
               href="contacts/"
-              class="middle text-decoration-none text-primary button"
+              class="text-primary button"
               >Contattami</a
             >
           </div>
-        </div>
+        </section>
       </div>
     </nav>
     
-    <main class="z-2 position-relative">
-      <section class="w-50 middle left">
-        <div class="flex-column text-center mt-5 px-5">
-          <p class="h3 p-3 fw-bold">Ciao, sono Matteo! 👋</p>
-          <p class="h2 p-2 border-bottom border-4 pb-4 border-darker rounded-1">
+    <main>
+      <section class="left">
+        <div>
+          <h3>Ciao, sono Matteo! 👋</h3>
+          <h2>
             Sono uno Sviluppatore
-            <span class="fw-bold">Front-End</span> con sede in Italia.
-          </p>
+            <span>Front-End</span> con sede in Italia.
+          </h2>
         </div>
       </section>
-      <section class="w-50 middle position-relative right">
+      <section class="right">
         <div
-          class="container bg-darker w-75 position-absolute z-0 rounded-5 image-bg"
-        ></div>
+          class="container image-bg"
+
+        >
         <img
-          class="mx-auto d-block z-1"
-          width="500"
-          src="assets/img/profile-picture-no-bg.png"
-          alt="Foto Profilo"
-        />
+        src="assets/img/profile-picture-no-bg.png"
+        alt="Foto Profilo"
+      />
+      </div>
       </section>
-      <section>
+      <section class="navigator">
         <div
-          class="slide position-absolute bg-darker rounded-5 middle previous"
-          style="left: 1%; bottom: 50%; height: 30px"
+          class="previous"
         >
           <a
-            class="text-decoration-none text-lighter fw-bold fs-5 button_3"
+            class="button_3"
             href="contacts/"
             >&#60;</a
           >
         </div>
 
         <div
-          class="slide position-absolute bg-darker rounded-5 middle z-3 next"
-          style="right: 1%; bottom: 50%; height: 30px"
+          class="next"
         >
           <a
-            class="text-decoration-none text-lighter fw-bold fs-5 button_3"
+            class="button_3"
             href="about_me/"
             >&#62;</a
           >
@@ -199,12 +193,9 @@
       </section>
     </main>
 
-    <footer
-      class="w-100 text-primary middle left position-absolute z-3"
-      style="top: 92vh;"
-    >
-      <section class="d-flex justify-content-center  p-4 rounded-5 bg-darker">
-        <p class="m-0">Matteo Fiorucci | © Tutti i diritti riservati</p>
+    <footer>
+      <section>
+        <p>Matteo Fiorucci | © Tutti i diritti riservati</p>
       </section>
     </footer>
     <script
