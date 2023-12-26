@@ -1090,31 +1090,18 @@ a.text-darker:hover, a.text-darker:focus {
     text-align: center !important;
     flex-direction: column !important;
     margin-bottom: 2rem;
+    width: 43vh !important;
   }
   * main .port .description a {
     display: flex;
     text-align: center;
-    margin: 0 !important;
     width: fit-content !important;
+    margin: 0 !important;
   }
   * main .port .description a .caption {
     width: 35vh !important;
     height: 20vh !important;
-  }
-  * main .port .description {
-    width: 43vh !important;
-    padding-bottom: 10px !important;
-    padding-top: 10px !important;
-  }
-  * main .port .description .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  * main .port .description .info span {
-    margin: 0 !important;
-    width: fit-content !important;
-    padding-top: 10px !important;
+    margin-bottom: 2rem !important;
   }
   * main .contatti {
     padding-bottom: 2rem;
