@@ -520,6 +520,9 @@ a.text-darker:hover, a.text-darker:focus {
   display: flex;
   align-items: center;
 }
+* body nav .nav-container .subcontainer1 .middle .button {
+  color: #A3CEF1;
+}
 * body nav .nav-container .subcontainer1 .middle .logo-navbar {
   text-decoration: none;
 }
@@ -605,25 +608,38 @@ a.text-darker:hover, a.text-darker:focus {
   justify-content: center;
   width: 50%;
 }
-* body main .left div {
+* body main .left .description {
   display: flex;
   flex-direction: column;
-  text-align: center;
   margin-top: 3rem;
-  padding-left: 3rem;
+  padding-left: 4rem;
   padding-right: 3rem;
 }
-* body main .left div h3 {
+* body main .left .description h1 {
   font-weight: bold;
   padding: 1rem;
 }
-* body main .left div h2 {
-  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+* body main .left .description p {
+  padding: 0.5rem;
+  font-size: 1.7rem;
+}
+* body main .left .description p span {
+  font-weight: bold;
+}
+* body main .left .description div {
+  display: flex;
+  align-items: center;
   border-bottom: 4px solid #6c9acf;
   border-radius: 3px;
 }
-* body main .left div h2 span {
+* body main .left .description div a {
+  text-decoration: none;
+  width: fit-content;
+  border: 2px solid #274c77;
+  color: #274c77;
   font-weight: bold;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
 }
 * body main .right {
   width: 50%;
@@ -639,6 +655,7 @@ a.text-darker:hover, a.text-darker:focus {
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
   background-color: #274c77;
   width: 75%;
+  margin-top: 15vh;
 }
 * body main .right .image-bg img {
   z-index: 1;
@@ -874,7 +891,7 @@ a.text-darker:hover, a.text-darker:focus {
 }
 * body main .navigator .previous {
   position: absolute;
-  background-color: #274c77;
+  background-color: #1a3350;
   border-radius: 50%;
   align-items: center;
   display: flex;
@@ -892,7 +909,7 @@ a.text-darker:hover, a.text-darker:focus {
 * body main .navigator .next {
   z-index: 3;
   position: absolute;
-  background-color: #274c77;
+  background-color: #1a3350;
   border-radius: 50%;
   align-items: center;
   display: flex;
@@ -931,15 +948,11 @@ a.text-darker:hover, a.text-darker:focus {
 * body footer section p {
   margin: 0;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 768px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
     z-index: 10000 !important;
-  }
-  * nav ul {
-    margin: 0 !important;
-    padding: 0 !important;
   }
   * nav .nav-container {
     display: flex;
@@ -947,35 +960,26 @@ a.text-darker:hover, a.text-darker:focus {
     justify-content: center;
     width: 100% !important;
   }
-  * nav .left,
-  * nav .right {
+  * nav .nav-container .left,
+  * nav .nav-container .right {
     display: none !important;
   }
-  * nav .center {
+  * nav .nav-container .center {
     margin: 0px !important;
     display: flex;
     justify-content: space-between !important;
   }
-  * nav div {
-    display: flex;
-    width: 100%;
-    align-items: center;
-  }
-  * nav .social {
-    display: none;
-  }
-  * nav .logo {
-    visibility: visible !important;
-    width: 90px !important;
-  }
-  * nav .middle {
+  * nav .nav-container .center .middle {
     margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
-  * nav .middle .dropdown {
+  * nav .nav-container .center .middle .dropdown {
     width: 100% !important;
     visibility: visible !important;
   }
-  * nav .middle .dropdown .dropdown-content {
+  * nav .nav-container .center .middle .dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #A3CEF1;
@@ -983,86 +987,117 @@ a.text-darker:hover, a.text-darker:focus {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  * nav .middle .dropdown .dropdown-content a {
+  * nav .nav-container .center .middle .dropdown .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  * nav .middle .dropdown .dropdown-content a:hover {
+  * nav .nav-container .center .middle .dropdown .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
-  * nav .middle .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
+  * nav .nav-container .center .middle .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
     display: block;
+  }
+  * nav .nav-container .center .middle .dropdown ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  * nav .nav-container .center .middle .social {
+    display: none;
+  }
+  * nav .nav-container .center .middle .logo {
+    visibility: visible !important;
+    width: 90px !important;
   }
   * main {
     margin-top: 90px;
     display: flex !important;
     flex-direction: column !important;
-    height: 130vh !important;
+    height: fit-content !important;
   }
   * main .left,
   * main .right {
     width: 100% !important;
   }
-  * main .left {
-    margin-top: 3rem;
+  * main .left .description {
+    padding-left: 2.2rem !important;
+    padding-right: 2.2rem !important;
   }
-  * main .right {
-    margin-top: 6rem;
+  * main .left .description h1 {
+    font-size: 30px;
   }
-  * main .image-bg {
-    width: 280px !important;
-    height: 150px !important;
-    top: 25% !important;
+  * main .left .description p {
+    font-size: 20px !important;
   }
-  * main img {
-    width: 200px !important;
+  * main .left .description div {
+    justify-content: space-between !important;
   }
-  * main .form-container {
-    width: 90% !important;
+  * main .left .description div .button {
+    margin-right: 0px !important;
+  }
+  * main .right .image-bg {
+    width: 55vh !important;
+    height: 25vh !important;
+    margin-top: 30vh !important;
+    margin-bottom: 5vh;
+  }
+  * main .right .image-bg img {
+    width: 97% !important;
   }
   * main .about {
-    display: none;
+    flex-direction: column !important;
+    height: fit-content !important;
   }
-  * main .drop {
-    width: 100% !important;
-    z-index: 0 !important;
-    visibility: visible !important;
-    margin-top: 1rem;
+  * main .about .subcontainer1 .about_me {
+    padding: 1.4rem !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
   }
-  * main .drop .me {
-    padding: 1.5rem !important;
+  * main .about .subcontainer1 .download {
+    justify-content: center !important;
   }
-  * main .drop .dropdown,
-  * main .drop .dropup {
-    padding: 4rem;
+  * main .about .subcontainer1 .download .description {
+    padding: 1.4rem !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
+    width: fit-content !important;
   }
-  * main .drop img {
-    width: 10px !important;
+  * main .about .subcontainer2 .description {
+    width: auto !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
+    padding: 1.4rem !important;
+    margin-top: 2rem !important;
+  }
+  * main .about .subcontainer2 .skill {
+    margin: auto !important;
+  }
+  * main .about .subcontainer2 .skill .container div {
+    margin-left: 0.7rem !important;
   }
   * main .port {
     flex-direction: column !important;
-    width: fit-content;
-    height: 80%;
+    margin-top: 1rem !important;
+    height: 90vh !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  * main .port div {
+  * main .port .description {
     align-items: center !important;
     display: flex;
     height: fit-content !important;
     text-align: center !important;
     flex-direction: column !important;
+    margin-bottom: 2rem;
   }
-  * main .port div a {
+  * main .port .description a {
     display: flex;
     text-align: center;
     margin: 0 !important;
     width: fit-content !important;
   }
-  * main .port div a .git {
-    display: none;
-  }
-  * main .port div a .caption {
+  * main .port .description a .caption {
     width: 35vh !important;
     height: 20vh !important;
   }
@@ -1070,7 +1105,6 @@ a.text-darker:hover, a.text-darker:focus {
     width: 43vh !important;
     padding-bottom: 10px !important;
     padding-top: 10px !important;
-    box-shadow: none !important;
   }
   * main .port .description .info {
     display: flex;
@@ -1082,282 +1116,129 @@ a.text-darker:hover, a.text-darker:focus {
     width: fit-content !important;
     padding-top: 10px !important;
   }
+  * main .contatti {
+    padding-bottom: 2rem;
+    margin-top: auto !important;
+  }
+  * main .contatti .form-container {
+    width: 90% !important;
+    margin-top: 2rem !important;
+  }
   * footer {
-    top: 130vh !important;
+    position: relative !important;
+    height: fit-content !important;
+    top: 0 !important;
+    display: block !important;
+  }
+  * footer section {
+    border-radius: 0px !important;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1400px) {
   * nav {
     background-color: #274c77;
     display: inline-block !important;
     z-index: 10000 !important;
-  }
-  * nav ul {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  * nav .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100% !important;
-  }
-  * nav .left,
-  * nav .right {
-    display: none !important;
-  }
-  * nav .center {
-    margin: 0px !important;
-    display: flex;
-    justify-content: space-between !important;
-  }
-  * nav div {
-    display: flex;
-    width: 100%;
-    align-items: center;
-  }
-  * nav .social {
-    display: none;
-  }
-  * nav .logo {
-    visibility: visible !important;
-    width: 90px !important;
-  }
-  * nav .dropdown {
-    width: 100% !important;
-    visibility: visible !important;
-  }
-  * nav .dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #A3CEF1;
-    min-height: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  * nav .dropdown .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  * nav .dropdown .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  * nav .dropdown .dropdown-content .dropdown-content:hover .dropdown-content {
-    display: block;
   }
   * main {
     margin-top: 90px;
     display: flex !important;
-    flex-direction: column !important;
-    height: 100vh !important;
+    height: fit-content !important;
   }
   * main .left,
   * main .right {
     width: 100% !important;
+    height: 100vh !important;
   }
-  * main .left {
-    margin-top: 3rem;
+  * main .left .description {
+    padding-left: 2.2rem !important;
+    padding-right: 2.2rem !important;
   }
-  * main .right {
-    margin-top: 6rem;
+  * main .left .description h1 {
+    font-size: 30px;
   }
-  * main .image-bg {
-    width: 280px !important;
-    height: 150px !important;
-    top: 40% !important;
+  * main .left .description p {
+    font-size: 20px !important;
   }
-  * main img {
-    width: 250px !important;
+  * main .left .description div {
+    justify-content: space-between !important;
   }
-  * main .form-container {
-    width: 90% !important;
+  * main .left .description div .button {
+    margin-right: 0px !important;
+  }
+  * main .right .image-bg {
+    width: 40vh !important;
+    height: 20vh !important;
+    margin-bottom: 10rem !important;
   }
   * main .about {
-    display: none;
+    flex-direction: column !important;
+    padding-top: 2.5rem;
   }
-  * main .drop {
-    width: 100% !important;
-    z-index: 0 !important;
-    visibility: visible !important;
-    margin-top: 1rem;
+  * main .about .subcontainer1 .about_me {
+    padding: 1.4rem !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
   }
-  * main .drop .me {
-    padding: 1.5rem !important;
+  * main .about .subcontainer1 .download {
+    justify-content: center !important;
   }
-  * main .drop .dropdown,
-  * main .drop .dropup {
-    padding: 4rem;
+  * main .about .subcontainer1 .download .description {
+    padding: 1.4rem !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
+    width: fit-content !important;
   }
-  * main .drop img {
-    width: 10px !important;
+  * main .about .subcontainer2 .description {
+    width: auto !important;
+    margin-left: 1.4rem !important;
+    margin-right: 1.4rem !important;
+    padding: 1.4rem !important;
+    margin-top: 2rem !important;
+  }
+  * main .about .subcontainer2 .skill {
+    margin: auto !important;
+  }
+  * main .about .subcontainer2 .skill .container div {
+    margin-left: 0.7rem !important;
   }
   * main .port {
     flex-direction: column !important;
+    margin-top: 2.5rem !important;
+    height: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  * main .port div {
+  * main .port .description {
     align-items: center !important;
     display: flex;
     height: fit-content !important;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: 410px !important;
     text-align: center !important;
     flex-direction: column !important;
+    margin-bottom: 2rem;
+    width: 60vh !important;
   }
-  * main .port div a {
+  * main .port .description a {
     display: flex;
     text-align: center;
     margin: 0 !important;
-    margin-top: 15px !important;
-    width: 100%;
-  }
-  * main .port div a .git {
-    width: 20px !important;
-    height: 20px !important;
-  }
-  * main .port div a .caption {
-    width: 314px !important;
-    height: 150px !important;
-  }
-  * main .port .description {
-    box-shadow: none !important;
-    padding: 20px 0 20px 0 !important;
-  }
-  * main .port .description .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  * main .port .description .info span {
-    margin: 0 !important;
     width: fit-content !important;
-    padding-top: 10px !important;
   }
-  * footer {
-    top: 100% !important;
+  * main .port .description a .caption {
+    width: 50vh !important;
+    height: 25vh !important;
   }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  * nav {
-    background-color: #274c77;
-    display: inline-block !important;
-    z-index: 10000 !important;
+  * main .contatti {
+    padding-bottom: 2rem;
+    margin-top: auto !important;
   }
-  * main {
-    height: 150vh !important;
-    margin-top: 90px;
-    padding-bottom: 90px !important;
-  }
-  * main .image-bg {
-    width: 500px !important;
-    top: 46.4% !important;
-  }
-  * main .port {
-    margin-top: 100px;
-  }
-  * main .port div {
-    padding: 2rem !important;
-    margin: 0 20px 0 20px;
-  }
-  * main .port img {
-    width: 400px !important;
-  }
-  * main .port a img {
-    width: 30px !important;
-  }
-  * main .port a .caption {
-    width: 370px !important;
-  }
-  * main .about {
-    display: none;
-  }
-  * main .drop {
-    margin-top: 100px !important;
-    width: 100% !important;
-    z-index: 0 !important;
-    visibility: visible !important;
-    margin-top: 1rem;
-  }
-  * main .drop .dropdown,
-  * main .drop .dropup {
-    padding: 4rem;
-  }
-  * main .drop img {
-    width: 10px !important;
-  }
-  * main .drop .description {
-    box-shadow: none;
-  }
-  * main .form-container {
-    padding: 2rem !important;
-    margin-top: 90px !important;
-    margin-bottom: 10px !important;
+  * main .contatti .form-container {
     width: 90% !important;
+    margin-top: 2rem !important;
   }
   * footer {
-    top: 152vh !important;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  * nav {
-    background-color: #274c77;
-    display: inline-block !important;
-    z-index: 10000 !important;
-  }
-  * main {
-    height: 110vh !important;
-    margin-top: 90px;
-    padding-bottom: 90px !important;
-  }
-  * main .image-bg {
-    width: 500px !important;
-    top: 41.2% !important;
-  }
-  * main .port {
-    margin-top: 100px;
-  }
-  * main .port div {
-    padding: 2rem !important;
-    margin: 0 20px 0 20px;
-  }
-  * main .port img {
-    width: 400px !important;
-  }
-  * main .port a img {
-    width: 30px !important;
-  }
-  * main .port a .caption {
-    width: 450px !important;
-  }
-  * main .about {
-    display: none;
-  }
-  * main .drop {
-    margin-top: 100px !important;
-    width: 100% !important;
-    z-index: 0 !important;
-    visibility: visible !important;
-    margin-top: 1rem;
-  }
-  * main .drop .dropdown,
-  * main .drop .dropup {
-    padding: 4rem;
-  }
-  * main .drop img {
-    width: 10px !important;
-  }
-  * main .drop .description {
-    box-shadow: none;
-  }
-  * main .form-container {
-    padding: 2rem !important;
-    margin-top: 90px !important;
-    margin-bottom: 10px !important;
-    width: 90% !important;
-  }
-  * footer {
-    top: 112vh !important;
+    position: relative !important;
+    height: fit-content !important;
+    top: 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */
