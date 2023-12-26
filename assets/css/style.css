@@ -1214,6 +1214,7 @@ a.text-darker:hover, a.text-darker:focus {
   * main .port .description a .caption {
     width: 50vh !important;
     height: 25vh !important;
+    margin-bottom: 2rem !important;
   }
   * main .contatti {
     padding-bottom: 2rem;
