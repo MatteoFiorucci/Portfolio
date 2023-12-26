@@ -653,7 +653,7 @@
         .image-bg {
 
           width: 60vh !important;
-          height: 40vh !important;
+          height: 34vh !important;
           margin-top: 20vh !important;
           margin-bottom: 5vh;
 
@@ -797,7 +797,6 @@
       .left,
       .right {
         width: 100% !important;
-        height: 100vh !important;
         padding-bottom: 5% !important;
       }
 
@@ -811,6 +810,7 @@
 
           p {
             font-size: 20px !important;
+            padding: 1rem !important;
           }
 
           div {
@@ -824,10 +824,9 @@
 
       .right {
         .image-bg {
-          width:40vh !important;
-          height: 20vh !important;
-          margin-bottom: 10rem !important;
-
+          width:55vh !important;
+          height: 24vh !important;
+          margin-top: 30vh !important;
         }
       }
 
