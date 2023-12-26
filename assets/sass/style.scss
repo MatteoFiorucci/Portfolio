@@ -541,7 +541,8 @@
   }
 
   // mobile Max-768px
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
+
     nav {
       background-color: #274c77;
       display: inline-block !important;
@@ -780,9 +781,10 @@
     }
   }
 
-  // mobile 769-1400 px
+  // mobile 769-1279 px
 
-  @media (min-width: 769px) and (max-width: 1400px) {
+  @media only screen and (min-width: 769px) and (max-width: 1279px),
+  screen and (max-height: 900px){
 
     nav {
       background-color: #274c77;
@@ -929,9 +931,12 @@
       position: relative !important;
       height: fit-content !important;
       top: 0 !important;
+      display: block !important;
 
+      section {
+        border-radius: 0px !important;
+      }
     }
 
   }
-
 }
