@@ -1017,7 +1017,8 @@ a.text-darker:hover, a.text-darker:focus {
     margin-top: 90px;
     display: flex !important;
     flex-direction: column !important;
-    height: fit-content !important;
+    height: 100% !important;
+    overflow-y: visible !important;
   }
   * main .left,
   * main .right {
@@ -1107,6 +1108,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .contatti {
     padding-bottom: 2rem;
+    height: 100vh !important;
   }
   * main .contatti .form-container {
     width: 90% !important;
@@ -1119,8 +1121,8 @@ a.text-darker:hover, a.text-darker:focus {
   * footer {
     position: relative !important;
     height: fit-content !important;
-    top: 0 !important;
     display: block !important;
+    top: 0 !important;
   }
   * footer section {
     border-radius: 0px !important;
@@ -1135,12 +1137,14 @@ a.text-darker:hover, a.text-darker:focus {
   * main {
     margin-top: 90px;
     display: flex !important;
-    height: max-content !important;
+    height: 100% !important;
+    overflow: visible !important;
   }
   * main .left,
   * main .right {
     width: 100% !important;
     padding-bottom: 5% !important;
+    height: 100vh !important;
   }
   * main .left .description {
     padding-left: 2.2rem !important;
@@ -1166,7 +1170,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .about {
     flex-direction: column !important;
-    padding-top: 2.5rem;
+    margin-top: 2rem !important;
   }
   * main .about .subcontainer1 .about_me {
     padding: 1.4rem !important;
@@ -1224,6 +1228,7 @@ a.text-darker:hover, a.text-darker:focus {
   }
   * main .contatti {
     padding-bottom: 2rem;
+    height: 120vh !important;
   }
   * main .contatti .form-container {
     width: 90% !important;
@@ -1232,8 +1237,9 @@ a.text-darker:hover, a.text-darker:focus {
   * footer {
     position: relative !important;
     height: fit-content !important;
-    top: 0 !important;
     display: block !important;
+    bottom: 0;
+    top: auto !important;
   }
   * footer section {
     border-radius: 0px !important;
@@ -1242,5 +1248,6 @@ a.text-darker:hover, a.text-darker:focus {
 @media only screen and (min-height: 1200px) and (max-height: 1400px) {
   * main {
     height: 100vh !important;
+    flex-direction: column !important;
   }
 }/*# sourceMappingURL=style.css.map */
