@@ -690,6 +690,7 @@ a.text-darker:hover, a.text-darker:focus {
 * body main .about .subcontainer1 .about_me .title {
   color: #A3CEF1;
   font-weight: bold;
+  font-size: 2rem !important;
   border-bottom: 3px solid #A3CEF1;
   width: fit-content;
 }
@@ -715,12 +716,13 @@ a.text-darker:hover, a.text-darker:focus {
   height: fit-content;
   width: 351px;
 }
-* body main .about .subcontainer1 .download .description h2 {
+* body main .about .subcontainer1 .download .description h1 {
   text-align: center;
   margin: 0;
   font-weight: bold;
+  font-size: 2rem;
 }
-* body main .about .subcontainer1 .download .description h2 .button {
+* body main .about .subcontainer1 .download .description h1 .button {
   color: #A3CEF1;
   width: fit-content;
   text-decoration: none;
@@ -744,6 +746,7 @@ a.text-darker:hover, a.text-darker:focus {
   font-weight: bold;
   border-bottom: 3px solid #A3CEF1;
   width: fit-content;
+  font-size: 2rem;
 }
 * body main .about .subcontainer2 .description p {
   color: #E7ECEF;

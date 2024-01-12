@@ -232,6 +232,7 @@
             .title {
               color: $primary_t1;
               font-weight: bold;
+              font-size: 2rem !important;
               border-bottom: 3px solid $primary_t1;
               width: fit-content;
             }
@@ -261,10 +262,11 @@
               height: fit-content;
               width: 351px;
 
-              h2 {
+              h1 {
                 text-align: center;
                 margin: 0;
                 font-weight: bold;
+                font-size: 2rem;
 
                 .button {
                   color: $primary_t1;
@@ -295,6 +297,7 @@
               font-weight: bold;
               border-bottom: 3px solid $primary_t1;
               width: fit-content;
+              font-size: 2rem;
             }
 
             p {
